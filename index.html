@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convertidor de Divisas</title>
+<link rel="stylesheet" href="css/miStyle.css">
+</head>
+<body>
+<header>
+    <h1>Convertidor de Divisas</h1>
+</header>
+<main class="container">
+<section class="formulario">
+    <h2>Calculadora de Divisas</h2>
+<form id="forma">
+    <label for="monto"> Pesos Mexicanos (MXN) : </label>
+    <input type="number" id="monto" placeholder="Ejemplo: 100" required>
+
+<label for="divisa"> Divisas: </label>
+<select id="divisa" required>
+    <option value="">Selecciona la moneda</option>
+    <option value="0.054" data-nombre="Dolar US$">Dolar</option>
+    <option value="0.047" data-nombre="Euro €">Euro</option>
+    <option value="0.041" data-nombre="Libra £">Libra</option>
+    <option value="8.49" data-nombre="Yen ¥">Yen</option>
+    
+</select>
+
+
+<input type="submit" value="Calcular">
+</form>
+</section>
+<section class="resultado">
+<h2>Compra</h2>
+<p id="resumen"></p>
+</section>
+</main>
+
+<script src="js/miScrit.js"></script>
+</body>
+</html>
