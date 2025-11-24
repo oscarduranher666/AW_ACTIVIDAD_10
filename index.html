@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Convertidor de Divisas</title>
-<link rel="stylesheet" href="css/miStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="miStylee.css">
 </head>
 <body>
-<header>
-    <h1>Convertidor de Divisas</h1>
+    <header>
+    <h1>Calculadora de IMC</h1>
 </header>
 <main class="container">
-<section class="formulario">
-    <h2>Calculadora de Divisas</h2>
-<form id="forma">
-    <label for="monto"> Pesos Mexicanos (MXN) : </label>
-    <input type="number" id="monto" placeholder="Ejemplo: 100" required>
+    <section class="formulario">
+    <h2>Calcula Tu IMC</h2>
+<form id="imc">
+    <label for="peso"> </label>
+    <input type="number" id="peso" placeholder="Peso (kg)" >
 
-<label for="divisa"> Divisas: </label>
-<select id="divisa" required>
-    <option value="">Selecciona la moneda</option>
-    <option value="0.054" data-nombre="Dolar US$">Dolar</option>
-    <option value="0.047" data-nombre="Euro €">Euro</option>
-    <option value="0.041" data-nombre="Libra £">Libra</option>
-    <option value="8.49" data-nombre="Yen ¥">Yen</option>
-    
-</select>
+    <label for="altura"> </label>
+    <input type="number" id="altura" step="0.01" placeholder="Altura (m)">
 
-
-<input type="submit" value="Calcular">
+    <input type="submit" value="Calcular_IMC">
 </form>
 </section>
-<section class="resultado">
-<h2>Compra</h2>
-<p id="resumen"></p>
+<section>
+<h2>Tu indice de masa corporal</h2>
+<p id="estatus"></p>
 </section>
 </main>
 
-<script src="js/miScrit.js"></script>
+<script src="MiScritp.js"></script>
 </body>
 </html>
